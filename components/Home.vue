@@ -18,6 +18,7 @@
 								<img
 									:src="item.image"
 									:alt="item.alt"
+									draggable="false"
 									class="transition-filter h-[267px] w-full rounded-lg shadow-sm duration-300 group-hover:blur-sm"
 								/>
 								<svg

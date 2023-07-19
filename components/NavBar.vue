@@ -40,7 +40,7 @@
 						<a href="#contact" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('contact') }}</a>
 					</li>
 					<div class="h-5 w-8">
-						<img :src="$t('flag')" alt="flag" class="aspect-video h-full w-full" />
+						<img :src="$t('flag')" alt="flag" draggable="false" class="aspect-video h-full w-full" />
 					</div>
 					<div>
 						<form>
@@ -114,7 +114,7 @@
 				</ul>
 				<div class="mt-8 flex">
 					<div class="h-5 w-8">
-						<img :src="$t('flag')" alt="flag" class="aspect-video h-full w-full" />
+						<img :src="$t('flag')" alt="flag" draggable="false" class="aspect-video h-full w-full" />
 					</div>
 					<div class="ml-2">
 						<form>
