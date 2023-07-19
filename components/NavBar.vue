@@ -39,17 +39,22 @@
 					<li>
 						<a href="#contact" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('contact') }}</a>
 					</li>
-					<div class="h-5 w-8">
-						<img :src="$t('flag')" alt="flag" draggable="false" class="aspect-video h-full w-full" />
-					</div>
-					<div>
-						<form>
-							<select class="bg-background text-text dark:bg-dbackground dark:text-dtext" v-model="locale">
-								<option value="en">{{ $t('ingles') }}</option>
-								<option value="es">{{ $t('espanol') }}</option>
-							</select>
-						</form>
-					</div>
+					<li>
+						<div class="h-5 w-8">
+							<img :src="$t('flag')" alt="flag" draggable="false" class="aspect-video h-full w-full" />
+						</div>
+					</li>
+					<li>
+						<div>
+							<form>
+								<select class="bg-background text-text dark:bg-dbackground dark:text-dtext" v-model="locale">
+									<option value="en">{{ $t('ingles') }}</option>
+									<option value="es">{{ $t('espanol') }}</option>
+								</select>
+							</form>
+						</div>
+					</li>
+
 					<!-- <li><a href="#" class="cta rounded bg-blue-500 px-3 py-2 font-semibold text-white hover:bg-blue-600">Sign Up</a></li> -->
 					<li>
 						<button
@@ -114,7 +119,7 @@
 				</ul>
 				<div class="mt-8 flex">
 					<div class="h-5 w-8">
-						<img :src="$t('flag')" alt="flag" draggable="false" class="aspect-video h-full w-full" />
+						<img :src="$t('flag')" alt="flag" draggable="false" class="aspect-video h-full w-full" loading="lazu" />
 					</div>
 					<div class="ml-2">
 						<form>
