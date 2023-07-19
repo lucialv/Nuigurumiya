@@ -4,4 +4,5 @@
 	</div>
 
 	<Home />
+	<Footerpage />
 </template>

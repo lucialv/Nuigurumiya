@@ -40,7 +40,7 @@
 						<a href="#contact" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('contact') }}</a>
 					</li>
 					<div class="h-5 w-8">
-						<img :src="$t('flag')" alt="spain-flag" class="aspect-video h-full w-full" />
+						<img :src="$t('flag')" alt="flag" class="aspect-video h-full w-full" />
 					</div>
 					<div>
 						<form>
@@ -96,6 +96,7 @@
 					<li>
 						<a href="#contact" @click="isOpen = false" class="my-4 inline-block">{{ $t('contact') }}</a>
 					</li>
+
 					<li>
 						<!-- <a
 							href="#"
@@ -104,13 +105,26 @@
 							>Sign Up</a
 						> -->
 						<button
-							class="absolute right-[100px] top-[350px] rounded bg-dbackground px-3 py-2 text-xs font-semibold uppercase text-dtext drop-shadow-xl transition duration-150 ease-in-out hover:scale-105 dark:bg-background dark:text-text"
+							class="absolute right-[100px] top-[400px] rounded bg-dbackground px-3 py-2 text-xs font-semibold uppercase text-dtext drop-shadow-xl transition duration-150 ease-in-out hover:scale-105 dark:bg-background dark:text-text"
 							@click="toggleDark()"
 						>
 							{{ isDark ? 'Light' : 'Dark' }}
 						</button>
 					</li>
 				</ul>
+				<div class="mt-8 flex">
+					<div class="h-5 w-8">
+						<img :src="$t('flag')" alt="flag" class="aspect-video h-full w-full" />
+					</div>
+					<div class="ml-2">
+						<form>
+							<select class="bg-background text-text dark:bg-dbackground dark:text-dtext" v-model="locale">
+								<option value="en">{{ $t('ingles') }}</option>
+								<option value="es">{{ $t('espanol') }}</option>
+							</select>
+						</form>
+					</div>
+				</div>
 			</aside>
 		</div>
 	</nav>

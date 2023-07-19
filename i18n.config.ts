@@ -4,7 +4,7 @@ export default defineI18nConfig(() => ({
 	messages: {
 		en: {
 			welcome: 'Welcome',
-			thebest: 'the best plushies',
+			thebest: 'the best plushies at your fingertips',
 			home: 'Home',
 			about: 'About',
 			contact: 'Contact',
@@ -18,7 +18,7 @@ export default defineI18nConfig(() => ({
 		},
 		es: {
 			welcome: 'Bienvenido',
-			thebest: 'los mejores peluches',
+			thebest: 'los mejores peluches a tu alcance',
 			home: 'Inicio',
 			about: 'Acerca de',
 			contact: 'Contacto',
