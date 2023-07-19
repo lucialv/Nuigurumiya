@@ -3,7 +3,7 @@ export const items = [
 		id: 1,
 		image: 'https://i.pinimg.com/originals/40/08/50/400850ea28341815f9b2bbfe4c25591c.jpg',
 		alt: '/sage',
-		name: 'Sage',
+		name: `Sage`,
 		price: '25€'
 	},
 	{
