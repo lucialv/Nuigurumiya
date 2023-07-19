@@ -124,5 +124,26 @@ export const items = [
 		alt: '/yoru',
 		name: 'Yoru',
 		price: '15€'
+	},
+	{
+		id: 19,
+		image: 'https://m.media-amazon.com/images/I/613JOVPMBRL.jpg',
+		alt: '/ajolote',
+		name: 'Ajolote',
+		price: '24€'
+	},
+	{
+		id: 20,
+		image: 'https://cdn.shopify.com/s/files/1/0256/9053/8050/products/product-image-791460924_1200x1200.jpg?v=1575226240',
+		alt: '/dog',
+		name: 'Dog',
+		price: '24€'
+	},
+	{
+		id: 21,
+		image: 'https://peluchesfantasia.com/cdn/shop/products/oso-rilakkuma-peluche_1719d2b6-af37-4210-ba40-1f9a12068934_2000x.jpg?v=1625575586',
+		alt: '/rilakkuma',
+		name: 'Rilakkuma',
+		price: '15€'
 	}
 ];

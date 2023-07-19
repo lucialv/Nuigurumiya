@@ -14,7 +14,7 @@ export default defineI18nConfig(() => ({
 			espanol: 'Spanish',
 			ingles: 'English',
 			buy: 'Buy',
-			peluchedelana: 'Wool plushie',
+			peluchedelana: 'Plushie of',
 			creadocon: 'Made with',
 			por: 'by'
 		},
@@ -30,7 +30,7 @@ export default defineI18nConfig(() => ({
 			espanol: 'Español',
 			ingles: 'Ingles',
 			buy: 'Comprar',
-			peluchedelana: 'Peluche de lana',
+			peluchedelana: 'Peluche de ',
 			creadocon: 'Creado con',
 			por: 'por'
 		}
