@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		@apply bg-background dark:bg-dbackground;
+	}
+}
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+}
