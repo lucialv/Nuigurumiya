@@ -28,16 +28,34 @@
 
 			<!-- Navbar -->
 			<div class="hidden md:inline-block">
-				<ul class="flex space-x-8 font-sans text-sm dark:text-dtext">
+				<ul class="flex space-x-8 font-sans text-sm font-semibold dark:text-dtext">
 					<li>
-						<a href="/" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('home') }}</a>
+						<a
+							href="/"
+							class="hover:border-b-2 hover:border-azul600 hover:pb-1 hover:text-azul500 dark:hover:border-azul600 dark:hover:text-azul500"
+							>{{ $t('home') }}</a
+						>
 					</li>
 					<li>
-						<a href="#aboutme" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('about') }}</a>
+						<a
+							href="#aboutme"
+							class="hover:border-b-2 hover:border-azul600 hover:pb-1 hover:text-azul500 dark:hover:border-azul600 dark:hover:text-azul500"
+							>{{ $t('about') }}</a
+						>
 					</li>
-					<li><a href="/shop" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">Shop</a></li>
 					<li>
-						<a href="#contact" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('contact') }}</a>
+						<a
+							href="/shop"
+							class="hover:border-b-2 hover:border-azul600 hover:pb-1 hover:text-azul500 dark:hover:border-azul600 dark:hover:text-azul500"
+							>{{ $t('shop') }}</a
+						>
+					</li>
+					<li>
+						<a
+							href="#contact"
+							class="hover:border-b-2 hover:border-azul600 hover:pb-1 hover:text-azul500 dark:hover:border-azul600 dark:hover:text-azul500"
+							>{{ $t('contact') }}</a
+						>
 					</li>
 					<li class="flex items-center space-x-1">
 						<!-- Bandera -->
@@ -48,7 +66,10 @@
 						<!-- Menú de opciones de idioma -->
 						<div>
 							<form>
-								<select class="bg-background text-text dark:bg-dbackground dark:text-dtext" v-model="locale">
+								<select
+									class="bg-background text-text hover:text-azul500 dark:bg-dbackground dark:text-dtext dark:hover:text-azul600"
+									v-model="locale"
+								>
 									<option value="en">{{ $t('ingles') }}</option>
 									<option value="es">{{ $t('espanol') }}</option>
 								</select>
@@ -62,7 +83,18 @@
 							class="absolute bottom-5 rounded bg-dbackground px-3 py-2 text-xs font-semibold uppercase text-dtext drop-shadow-xl transition duration-150 ease-in-out hover:scale-105 dark:bg-background dark:text-text"
 							@click="toggleDark()"
 						>
-							{{ isDark ? $t('light') : $t('dark') }}
+							<svg v-if="isDark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+								<path
+									d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+								/>
+							</svg>
+							<svg v-else-if="!isDark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+								<path
+									fill-rule="evenodd"
+									d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+									clip-rule="evenodd"
+								/>
+							</svg>
 						</button>
 					</li>
 				</ul>
@@ -93,12 +125,14 @@
 
 				<ul class="divide-y font-sans">
 					<li>
-						<a href="#home" @click="isOpen = false" class="my-4 inline-block">{{ $t('home') }}</a>
+						<a href="/" @click="isOpen = false" class="my-4 inline-block">{{ $t('home') }}</a>
 					</li>
 					<li>
-						<a href="#aboutme" @click="isOpen = false" class="my-4 inline-block">{{ $t('about') }}</a>
+						<a href="/#aboutme" @click="isOpen = false" class="my-4 inline-block">{{ $t('about') }}</a>
 					</li>
-					<li><a href="#support" @click="isOpen = false" class="my-4 inline-block">Support</a></li>
+					<li>
+						<a href="/shop" @click="isOpen = false" class="my-4 inline-block">{{ $t('shop') }}</a>
+					</li>
 					<li>
 						<a href="#contact" @click="isOpen = false" class="my-4 inline-block">{{ $t('contact') }}</a>
 					</li>
@@ -114,7 +148,18 @@
 							class="absolute right-[100px] top-[400px] rounded bg-dbackground px-3 py-2 text-xs font-semibold uppercase text-dtext drop-shadow-xl transition duration-150 ease-in-out hover:scale-105 dark:bg-background dark:text-text"
 							@click="toggleDark()"
 						>
-							{{ isDark ? 'Light' : 'Dark' }}
+							<svg v-if="isDark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+								<path
+									d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+								/>
+							</svg>
+							<svg v-else-if="!isDark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+								<path
+									fill-rule="evenodd"
+									d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+									clip-rule="evenodd"
+								/>
+							</svg>
 						</button>
 					</li>
 				</ul>

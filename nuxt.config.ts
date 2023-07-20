@@ -12,7 +12,6 @@ export default defineNuxtConfig({
 	},
 	colorMode: {
 		preference: 'dark', // default value of the color mode
-		fallback: 'dark', // fallback value if the preference can't be detected
 		classSuffix: '', // optional, default value: ''
 		storageKey: 'nuxt-color-mode' // optional, default value: 'color-mode'
 	},
@@ -39,7 +38,7 @@ export default defineNuxtConfig({
 				{ name: 'theme-color', content: '##5F2DD2' },
 				{
 					name: 'description',
-					content: "Lucía Álvarez's personal website and portfolio"
+					content: 'Nuigurumiya, the best plushies at your fingertips.'
 				},
 				{
 					name: 'viewport',
@@ -67,16 +66,16 @@ export default defineNuxtConfig({
 				{ name: 'shortlink', content: 'https://nuigurumiya.mishu.dev' },
 				{
 					name: 'subject',
-					content: "Lucía Álvarez's personal website and portfolio"
+					content: 'Nuigurumiya, the best plushies at your fingertips.'
 				},
 				{
 					name: 'summary',
-					content: 'Nuigurumiya, the best plushies at your fingertips. '
+					content: 'Nuigurumiya, the best plushies at your fingertips.'
 				},
 				{ name: 'url', content: 'https://nuigurumiya.mishu.dev' },
 				{
 					property: 'og:description',
-					content: "Lucía Álvarez's personal website and portfolio"
+					content: 'Nuigurumiya, the best plushies at your fingertips.'
 				},
 				{ property: 'og:email', content: 'mishudiscord@gmail.com' },
 				{ property: 'og:locale', content: 'en_US' },
@@ -84,7 +83,8 @@ export default defineNuxtConfig({
 				{ property: 'og:title', content: 'Nuigurumiya the best plushies' },
 				{ property: 'og:type', content: 'website' },
 				{ property: 'og:url', content: 'https://nuigurumiya.mishu.dev' },
-				{ property: 'og:image', content: '/owo.webp' }
+				{ property: 'og:image', content: 'https://cdn.discordapp.com/attachments/1112295866510868553/1131540090598998087/image.png' },
+				{ property: 'icon', content: 'https://www.citypng.com/public/uploads/preview/-41603422078wgu1oobdb9.png' }
 			]
 		}
 	}

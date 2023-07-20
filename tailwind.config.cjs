@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
 module.exports = {
 	mode: 'jit',
 	content: [
@@ -21,7 +22,18 @@ module.exports = {
 			dbackground: '#0c0c0c',
 			dprimary: '#a993d1',
 			dsecondary: '#3c2c62',
-			daccent: '#9f81e4'
+			daccent: '#9f81e4',
+			pastelgreen: '#12D900',
+			pastelred: '#F70D1A',
+			pastelyellow: '#FFEE62',
+			pastelblue: '#900C3F',
+			pastelpurple: '#581845',
+			pastelorange: '#FF5733',
+			pastelgray: '#FF5733',
+			azul600: '#2563EB',
+			azul500: '#3B82F6',
+			gray: colors.gray,
+			white: colors.white
 		}
 	}
 };

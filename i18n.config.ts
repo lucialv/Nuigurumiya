@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
 	legacy: false,
-	locale: 'en',
+	locale: 'es',
 	messages: {
 		en: {
 			welcome: 'Welcome',
@@ -17,7 +17,17 @@ export default defineI18nConfig(() => ({
 			peluchedelana: 'Plushie of',
 			creadocon: 'Made with',
 			por: 'by',
-			valorantplushies: 'Valorant Plushies'
+			valorantplushies: 'Valorant Plushies',
+			en: 'in',
+			peoplehelpful: 'people found this helpful',
+			helpful: 'Helpful',
+			readmore: 'Read more',
+			globalratings: 'global ratings',
+			stars: 'stars',
+			star: 'star',
+			reportabuse: 'Report abuse',
+			reviews: 'Reviews',
+			shop: 'Shop'
 		},
 		es: {
 			welcome: 'Bienvenido',
@@ -34,7 +44,17 @@ export default defineI18nConfig(() => ({
 			peluchedelana: 'Peluche de ',
 			creadocon: 'Creado con',
 			por: 'por',
-			valorantplushies: 'Peluches de Valorant'
+			valorantplushies: 'Peluches de Valorant',
+			en: 'en',
+			peoplehelpful: 'personas encontraron esto útil',
+			helpful: 'Útil',
+			readmore: 'Leer más',
+			globalratings: 'reseñas globales',
+			stars: 'estrellas',
+			star: 'estrella',
+			reportabuse: 'Reportar abuso',
+			reviews: 'Reseñas',
+			shop: 'Tienda'
 		}
 	}
 }));
