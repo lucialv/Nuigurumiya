@@ -3,7 +3,12 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
 	i18n: {
-		vueI18n: './i18n.config.ts' // if you are using custom path, default
+		vueI18n: './i18n.config.ts',
+		detectBrowserLanguage: {
+			useCookie: true,
+			alwaysRedirect: true,
+			cookieCrossOrigin: true
+		} // if you are using custom path, default
 	},
 	colorMode: {
 		preference: 'dark', // default value of the color mode
@@ -13,9 +18,9 @@ export default defineNuxtConfig({
 	},
 	app: {
 		head: {
-			title: 'Lucía Álvarez',
+			title: 'Nuigurumiya',
 			htmlAttrs: { lang: 'en' },
-			link: [{ rel: 'canonical', href: 'https://mishu.dev' }],
+			link: [{ rel: 'canonical', href: 'https://nuigurumiya.mishu.dev' }],
 			meta: [
 				{
 					'http-equiv': 'Cache-Control',
@@ -31,7 +36,7 @@ export default defineNuxtConfig({
 				{ name: 'audience', content: 'all' },
 				{ name: 'author', content: 'Lucía Álvarez, mishudiscord@gmail.com' },
 				{ name: 'coverage', content: 'Worldwide' },
-				{ name: 'theme-color', content: '#C4EEFF' },
+				{ name: 'theme-color', content: '##5F2DD2' },
 				{
 					name: 'description',
 					content: "Lucía Álvarez's personal website and portfolio"
@@ -44,13 +49,13 @@ export default defineNuxtConfig({
 				{ name: 'distribution', content: 'Global' },
 				{ name: 'googlebot', content: 'index,follow' },
 				{ name: 'HandheldFriendly', content: 'True' },
-				{ name: 'identifier-URL', content: 'https://mishu.dev' },
+				{ name: 'identifier-URL', content: 'https://nuigurumiya.mishu.dev' },
 				{
 					name: 'keywords',
 					content: 'mishu, Lucía Álvarez Portfolio, Lucía Álvarez, Lucía Portfolio, mishu portfolio'
 				},
 				{ name: 'msapplication-config', content: '/browserconfig.xml' },
-				{ name: 'msapplication-TileColor', content: '#C4EEFF' },
+				{ name: 'msapplication-TileColor', content: '#5F2DD2' },
 				{ name: 'owner', content: 'Lucía Álvarez, mishudiscord@gmail.com' },
 				{ name: 'rating', content: 'safe for kids' },
 				{ name: 'reply-to', content: 'mishudiscord@gmail.com' },
@@ -59,16 +64,16 @@ export default defineNuxtConfig({
 					name: 'robots',
 					content: 'archive,follow,imageindex,index,odp,snippet,translate'
 				},
-				{ name: 'shortlink', content: 'https://mishu.dev' },
+				{ name: 'shortlink', content: 'https://nuigurumiya.mishu.dev' },
 				{
 					name: 'subject',
 					content: "Lucía Álvarez's personal website and portfolio"
 				},
 				{
 					name: 'summary',
-					content: "Lucía Álvarez's personal website and portfolio."
+					content: 'Nuigurumiya, the best plushies at your fingertips. '
 				},
-				{ name: 'url', content: 'https://mishu.dev' },
+				{ name: 'url', content: 'https://nuigurumiya.mishu.dev' },
 				{
 					property: 'og:description',
 					content: "Lucía Álvarez's personal website and portfolio"
@@ -76,9 +81,9 @@ export default defineNuxtConfig({
 				{ property: 'og:email', content: 'mishudiscord@gmail.com' },
 				{ property: 'og:locale', content: 'en_US' },
 				{ property: 'og:site_name', content: 'Lucía Álvarez' },
-				{ property: 'og:title', content: 'Home | Lucía Álvarez' },
+				{ property: 'og:title', content: 'Nuigurumiya the best plushies' },
 				{ property: 'og:type', content: 'website' },
-				{ property: 'og:url', content: 'https://mishu.dev' },
+				{ property: 'og:url', content: 'https://nuigurumiya.mishu.dev' },
 				{ property: 'og:image', content: '/owo.webp' }
 			]
 		}

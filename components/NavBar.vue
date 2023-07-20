@@ -4,7 +4,7 @@
 		<div class="flex items-center justify-between">
 			<!-- Header logo -->
 			<div>
-				<a href="#home">
+				<a href="/">
 					<Tailwind />
 				</a>
 			</div>
@@ -30,21 +30,22 @@
 			<div class="hidden md:inline-block">
 				<ul class="flex space-x-8 font-sans text-sm dark:text-dtext">
 					<li>
-						<a href="#home" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('home') }}</a>
+						<a href="/" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('home') }}</a>
 					</li>
 					<li>
 						<a href="#aboutme" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('about') }}</a>
 					</li>
-					<li><a href="#support" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">Support</a></li>
+					<li><a href="/shop" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">Shop</a></li>
 					<li>
 						<a href="#contact" class="hover:border-b-2 hover:border-text hover:pb-1 dark:hover:border-dtext">{{ $t('contact') }}</a>
 					</li>
-					<li>
+					<li class="flex items-center space-x-1">
+						<!-- Bandera -->
 						<div class="h-5 w-8">
 							<img :src="$t('flag')" alt="flag" draggable="false" class="aspect-video h-full w-full" />
 						</div>
-					</li>
-					<li>
+
+						<!-- Menú de opciones de idioma -->
 						<div>
 							<form>
 								<select class="bg-background text-text dark:bg-dbackground dark:text-dtext" v-model="locale">

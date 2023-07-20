@@ -16,7 +16,8 @@ export default defineI18nConfig(() => ({
 			buy: 'Buy',
 			peluchedelana: 'Plushie of',
 			creadocon: 'Made with',
-			por: 'by'
+			por: 'by',
+			valorantplushies: 'Valorant Plushies'
 		},
 		es: {
 			welcome: 'Bienvenido',
@@ -32,7 +33,8 @@ export default defineI18nConfig(() => ({
 			buy: 'Comprar',
 			peluchedelana: 'Peluche de ',
 			creadocon: 'Creado con',
-			por: 'por'
+			por: 'por',
+			valorantplushies: 'Peluches de Valorant'
 		}
 	}
 }));
