@@ -47,7 +47,10 @@
 						</nuxt-link>
 					</div>
 					<div class="mt-2 flex items-center justify-between">
-						<p class="font-sans text-2xl font-bold text-accent">{{ item.price }}</p>
+						<p v-if="$i18n.locale === 'es'" class="font-sans text-2xl font-bold text-accent">{{ item.price }}€</p>
+						<p v-else-if="$i18n.locale === 'en'" class="font-sans text-2xl font-bold text-accent">
+							{{ (item.price * 1.17).toFixed(2) }}$
+						</p>
 						<nuxt-link :to="`/products/${item.id}`">
 							<button
 								class="min-w-[98px] rounded-2xl bg-gradient-to-tr from-accent to-primary px-4 py-2 font-sans font-bold text-dtext dark:text-text"
